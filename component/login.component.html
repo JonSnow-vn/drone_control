@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../script/login.service.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()" method="get" action="http://127.0.0.1:5500/component/main.component.html">
+    <div class="wrapper">
+        <div class="login-table">
+            <div class="login-row">
+                <label>Account ID</label>
+                <input name="faccountid" type="text">
+            </div>
+            <div class="login-row">
+                <label>Password</label>
+                <input name="fpassworld" type="password">
+            </div>
+            <div class="login-row">
+                <button>Sign in</button>
+                <button onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
